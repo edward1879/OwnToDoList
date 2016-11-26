@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.android.owntodolist.MainActivity">
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <EditText
+            android:layout_weight="8"
+            android:paddingLeft="16dp"
+            android:hint="Enter the task here"
+            android:id="@+id/et_addTask"
+            android:layout_width="0px"
+            android:layout_height="wrap_content" />
+
+        <ImageButton
+            android:id="@+id/btn_addTask"
+            android:scaleType="centerCrop"
+            android:layout_weight="1"
+            android:src="@drawable/btn_add"
+            android:background="#FFFFFF"
+            android:layout_width="0px"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list_view_main"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"/>
+
+
+
+
+</LinearLayout>
